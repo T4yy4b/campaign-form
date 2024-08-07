@@ -5,10 +5,10 @@ import Button from "./Button";
 const CampaignForm = () => {
   return (
     <form className={styles.formContainer}>
-      <div className={styles.imgDiv}>
+      {/* <div className={styles.imgDiv}>
       
         <Image src={"/images/dr.png"} alt="dr" width={100} height={100} />
-      </div>
+      </div> */}
 
       <div className={styles.formGroup}>
         <label htmlFor="name" className={styles.formLabel}>
