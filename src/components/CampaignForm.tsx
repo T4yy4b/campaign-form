@@ -6,14 +6,14 @@ const CampaignForm = () => {
   return (
     <form className={styles.formContainer}>
       <div className={styles.imgDiv}>
-        <Image
+        {/* <Image
           src={"/images/campaignBanner2.jpg"}
           alt="top bannar"
           width={400}
           height={100}
           priority
           loading="eager"
-        />
+        /> */}
       </div>
 
       <div className={styles.formGroup}>
