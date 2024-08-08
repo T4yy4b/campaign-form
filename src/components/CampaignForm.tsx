@@ -6,8 +6,14 @@ const CampaignForm = () => {
   return (
     <form className={styles.formContainer}>
       <div className={styles.imgDiv}>
-      
-        <Image src={"/images/campaignBanner2.jpg"} alt="dr" width={400} height={100} />
+        <Image
+          src={"/images/campaignBanner2.jpg"}
+          alt="top bannar"
+          width={400}
+          height={100}
+          priority
+          loading="eager"
+        />
       </div>
 
       <div className={styles.formGroup}>
@@ -27,30 +33,16 @@ const CampaignForm = () => {
           Enter Opt:
         </label>
         <div className={styles.formInputContainer}>
-          <input
-            type="number"
-            name="email1"
-            className={styles.formInput}
-          />
-          <input
-            type="number"
-            name="email2"
-            className={styles.formInput}
-          />
-          <input
-            type="number"
-            name="email3"
-            className={styles.formInput}
-          />
-          <input
-            type="number"
-            name="email4"
-            className={styles.formInput}
-          />
+          <input type="number" name="email1" className={styles.formInput} />
+          <input type="number" name="email2" className={styles.formInput} />
+          <input type="number" name="email3" className={styles.formInput} />
+          <input type="number" name="email4" className={styles.formInput} />
         </div>
       </div>
 
-      <div className={styles.buttonDiv}><Button/></div>
+      <div className={styles.buttonDiv}>
+        <Button />
+      </div>
     </form>
   );
 };
