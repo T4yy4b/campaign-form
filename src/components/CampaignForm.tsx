@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./form.module.css";
 import Button from "./Button";
-
 const CampaignForm = () => {
   return (
     <form className={styles.formContainer}>
@@ -15,7 +14,6 @@ const CampaignForm = () => {
           loading="eager"
         />
       </div>
-
       <div className={styles.formGroup}>
         <label htmlFor="name" className={styles.formLabel}>
           Enter your jazz Number:
@@ -39,12 +37,10 @@ const CampaignForm = () => {
           <input type="number" name="email4" className={styles.formInput} />
         </div>
       </div>
-
       <div className={styles.buttonDiv}>
         <Button />
       </div>
     </form>
   );
 };
-
 export default CampaignForm;
